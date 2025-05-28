@@ -5,7 +5,9 @@ function OrderPage() {
   const [order, setOrder] = useState(null);
 
   useEffect(() => {
-    axios.get('https://netbackend-efeae5gcgad3hbf6.canadacentral-01.azurewebsites.net/order') // Use correct backend URL
+    axios.get('https://netbackend-efeae5gcgad3hbf6.canadacentral-01.azurewebsites.net/order',{
+        withCredentials: true
+    }) // Use correct backend URL
       .then((response) => {
         setOrder(response.data);
       })
