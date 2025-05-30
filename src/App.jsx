@@ -1,6 +1,6 @@
 import './App.css'
 import FoodDeliveryHome from './components/homepage'
-import OrderPage from './components/Orderpage'
+import OrderPage from './components/OrderPage'
 
 // ✅ Import BrowserRouter, Routes, and Route
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
