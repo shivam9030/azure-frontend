@@ -8,7 +8,7 @@ function OrderPage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/menu") // update URL as needed
+      .get("https://backendfooddb-aufegcdrfxfwhfcz.canadacentral-01.azurewebsites.net/menu") // update URL as needed
       .then((response) => {
         setMenuItems(response.data);
         setLoading(false);
